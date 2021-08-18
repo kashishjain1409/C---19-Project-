@@ -19,7 +19,7 @@ function preload(){
 }
 
 function setup(){
-createCanvas(windowWightwindowHeight);
+createCanvas(windoWidth,windowHeight);
 
 // Moving background
 path=createSprite(widht/2,200);
@@ -103,7 +103,7 @@ function draw() {
 
 function createCash() {
   if (World.frameCount % 200 == 0) {
-  var cash = createSprite(Math.round(random(50,widht-50),40, 10, 10));
+  var cash = createSprite(Math.round(random(50,width-50),40, 10, 10));
   cash.addImage(cashImg);
   cash.scale=0.12;
   cash.velocityY = 3;
@@ -114,7 +114,7 @@ function createCash() {
 
 function createDiamonds() {
   if (World.frameCount % 320 == 0) {
-  var diamonds = createSprite(Math.round(random(50,widht-50),40, 10, 10));
+  var diamonds = createSprite(Math.round(random(50,width-50),40, 10, 10));
   diamonds.addImage(diamondsImg);
   diamonds.scale=0.03;
   diamonds.velocityY = 3;
@@ -125,7 +125,7 @@ function createDiamonds() {
 
 function createJwellery() {
   if (World.frameCount % 410 == 0) {
-  var jwellery = createSprite(Math.round(random(50,widht-50),40, 10, 10));
+  var jwellery = createSprite(Math.round(random(50,width-50),40, 10, 10));
   jwellery.addImage(jwelleryImg);
   jwellery.scale=0.13;
   jwellery.velocityY = 3;
@@ -136,7 +136,7 @@ function createJwellery() {
 
 function createSword(){
   if (World.frameCount % 530 == 0) {
-  var sword = createSprite(Math.round(random(50,widht-50),40, 10, 10));
+  var sword = createSprite(Math.round(random(50,width-50),40, 10, 10));
   sword.addImage(swordImg);
   sword.scale=0.1;
   sword.velocityY = 3;
